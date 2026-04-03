@@ -1,0 +1,40 @@
+# Process Management Commands
+
+## Display Information
+- `ps aux` - Display detailed information about all running processes
+- `top` - Show real-time system resource usage and processes
+- `htop` - Interactive and user-friendly process monitoring (requires installation)
+- `pidof firefox` - Get the PID(s) of a running process by name
+- `pgrep -l nginx` - Find PIDs of processes matching a name pattern
+- `watch -n 2 ps aux` - Run 'ps aux' every 2 seconds
+- `uptime` - Show system uptime and load averages
+- `vmstat` - Display system performance statistics
+
+## Process Control
+- `kill 1234` - Terminate a process by PID
+- `killall firefox` - Kill all processes with the given name
+- `pkill -f my_script.py` - Kill processes matching a name pattern
+- `xkill` - Click a window to terminate its process (requires installation)
+- `nice -n 10 my_program` - Start a process with a specific priority
+- `renice -n 5 -p 1234` - Change priority of a running process
+- `nohup ./script.sh &` - Run a command immune to hangups (keeps running after logout)
+- `disown -h %1` - Remove a job from the shell's job table, keeping it running
+- `bg %1` - Resume a suspended job in the background
+- `fg %1` - Bring a background job to the foreground
+- `jobs` - List background jobs
+
+## Process Execution & Debugging
+- `strace -p 1234` - Trace system calls of a running process
+- `lsof -p 1234` - List open files of a process
+- `iotop` - Show disk I/O usage by processes
+- `iftop` - Show real-time network bandwidth usage by processes
+- `netstat -tulnp` - Show active network connections and listening ports
+- `ss -tulnp` - Faster alternative to netstat for network connections
+
+## Process Persistence & Session Management
+- `screen -S mysession` - Start a detachable terminal session
+- `tmux` - Terminal multiplexer for managing multiple sessions
+- `systemctl restart nginx` - Restart a systemd service (e.g., nginx)
+- `service apache2 restart` - Restart a service on older init-based systems
+- `crontab -e` - Edit scheduled tasks (cron jobs)
+- `echo "reboot" | at 03:00` - Schedule a one-time job to run at 03:00

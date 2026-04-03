@@ -1,0 +1,55 @@
+How NAT Works
+Network Address Translation (NAT) is a technique used by a router/NAT gateway to enable multiple LAN devices to share a single public IP address by modifying IP addresses in packet headers in transit
+NAT Table
+192.168.0.13:1000
+184.28.207.5:10000
+192.168.0.25:2000
+184.28.207.5:20000
+192.168.0.30:3000
+184.28.207.5:30000
+
+NAT gateway translates
+IP/port 192.168.0.13:1000 to 184.28.207.5:10000 and vice versa based on NAT table
+192.168.0.13
+8.8.8.8
+NAT gateway is assigned a public
+IP address
+184.28.207.5
+192.168.0.25
+NAT Gateway
+Packet before translation
+Packet after translation
+Source IP & Port
+Source IP & Port
+192.168.0.13:1000
+184.28.207.5:10000
+Destination IP & Port
+Destination IP & Port
+192.168.0.30
+8.8.8.8:53
+8.8.8.8:53
+Logos and trademarks are the properties of their respective owners.
+
+
+
+How DNS Works
+Created by @dan_nanni on Instagram
+Root: Root
+Name Server
+Follow
+go to tld name server for.com
+Local
+DNS
+Resolver
+.com
+1 TLD
+Name Server
+www.google.com
+6
+go to
+authoritative google.com
+name server for
+7 www.google.com
+C
+Authoritative
+Name Server

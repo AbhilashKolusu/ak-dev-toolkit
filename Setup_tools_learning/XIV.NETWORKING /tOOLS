@@ -1,0 +1,28 @@
+# Networking Commands and Use Cases in DevOps
+
+## Basic Networking Commands:
+- `ifconfig` – Display network interfaces.
+- `ip a` – Show IP addresses.
+- `ping <host>` – Check connectivity.
+- `traceroute <host>` – Show route.
+
+## Advanced Networking Commands:
+- `netstat -tuln` – Show active ports.
+- `ss -tuln` – Display listening ports.
+- `nc -zv <host> <port>` – Check port status.
+- `curl <url>` – Make HTTP requests.
+- `wget <url>` – Download files from a URL.
+- `dig <domain>` – DNS lookup.
+- `nslookup <domain>` – Query DNS.
+- `ip route show` – Show routing table.
+- `arp -a` – Show ARP table.
+- `iptables -L` – List firewall rules.
+- `tcpdump -i eth0` – Capture network traffic.
+
+## DevOps Use Cases:
+- **Container Networking**: Docker/Kubernetes network management.
+- **Monitoring and Debugging**: Diagnose latency and connectivity.
+- **Firewall Management**: Configure and manage iptables.
+- **Automation**: Automate network setups with tools like Ansible.
+
+This document now includes an expanded set of **networking commands and use cases in DevOps**.

@@ -1,0 +1,45 @@
+# Databases for DevOps – List, Key Commands, and Use Cases
+
+## 1. MySQL
+*Open-source relational database.*
+### Use Cases:
+- **Web Applications**: Used by platforms like WordPress, Joomla.
+- **Transactional Systems**: Banking, e-commerce transactions.
+- **Data Warehousing**: Storing structured data for analysis.
+
+### Key Commands:
+- `mysql -u root -p` – Login to MySQL.
+- `SHOW DATABASES;` – List databases.
+
+---
+
+## 2. Cassandra
+*Highly scalable NoSQL database.*
+### Use Cases:
+- **High Availability Systems**: Used by Netflix, Facebook for distributed data.
+- **Time-Series Data**: IoT, logging systems.
+- **Big Data Applications**: Handling large-scale data operations.
+
+### Key Commands:
+- `cqlsh` – Start Cassandra Query Language Shell.
+- `DESCRIBE KEYSPACES;` – List keyspaces.
+
+---
+
+## 3. DB2
+*IBM’s relational database solution.*
+### Use Cases:
+- **Enterprise Applications**: Banking, insurance, and financial services.
+- **Data Warehousing**: Business Intelligence (BI) and analytics.
+- **Transaction Management**: High-performance OLTP systems.
+
+### Key Commands:
+- `db2 connect to db_name user user_name using password` – Connect to DB2.
+- `db2 list db directory` – List databases.
+
+---
+
+## Other Databases:
+### PostgreSQL, MongoDB, Redis (see above for key commands).
+
+This document now includes key databases with commands and their real-world use cases in DevOps environments.
