@@ -4,8 +4,8 @@ This folder collects essential developer tools, setup instructions, and workflow
 
 ## Directory overview
 - `git/` - Version control and branch strategies.
-- `linux-essentials/` - Terminal, process management, and system utilities.
 - `vscode/` - VS Code extensions and environment setup.
+- `../setup/linux/` - Terminal, process management, and system utilities (moved to setup/).
 
 ## 2026 additions
 - Add tooling for remote containers, Codespaces, and Dev Containers.
@@ -14,9 +14,9 @@ This folder collects essential developer tools, setup instructions, and workflow
 
 ## Getting started
 1. Start with `git/README.md` to configure identity and branching.
-2. Configure shell and environment using `linux-essentials/README.md`.
+2. Configure shell and environment using `../setup/linux/README.md`.
 3. Set up IDE with `vscode/README.md`.
-4. Integrate with CI/CD in `devops-tools/`.
+4. Integrate with CI/CD in `../devops/`.
 
 ## Fast commands
 ```bash

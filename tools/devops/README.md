@@ -24,13 +24,13 @@ This folder contains curated DevOps tooling guidance, installation instructions,
 ```bash
 # Clone repo
 git clone https://github.com/<your-org>/ak-dev-toolkit.git
-cd ak-dev-toolkit/devops-tools
+cd ak-dev-toolkit/tools/devops
 
 # Read the master guide
 less README.md
 
 # Open the recommended deep dive
-less complete-setup/DEVOPS-TOOLKIT-SETUP.md
+less complete-setup/devops-tool-analysis.md
 ```
 
 ## Next actions

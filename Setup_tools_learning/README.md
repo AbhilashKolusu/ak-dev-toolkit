@@ -1,47 +1,47 @@
-# Local Development Environment Setup
+# GenAI Tools & Best Practices
 
-This repository contains documentation and scripts for setting up tools in your local development environment.
+This guide outlines the standards for using AI-assisted engineering tools within the `ak-dev-toolkit` environment.
 
-## Overview
+## Core Tooling
 
-Setting up your local development environment is essential for smooth and efficient development workflows. This README provides instructions and scripts to help you install and configure the necessary tools on your computer.
+### 1. Gemini Code Assist / Google Cloud Code
+- **Primary Use**: Context-aware code generation, cloud architecture explanations, and log analysis.
+- **Setup**: Install the "Google Cloud Code" extension in VS Code and authenticate with your GCP project.
 
-1. Docker
-Docker is a platform for developing, shipping, and running applications using containerization.
+### 2. GitHub Copilot
+- **Primary Use**: Inline completions, repetitive boilerplate generation, and unit test skeleton creation.
+- **Key Command**: `Cmd + I` (Inline Chat) for quick refactors.
 
-Installation: Install Docker Desktop by following the instructions for your operating system from the official Docker website.
-Configuration: Docker Desktop should automatically start after installation. You can customize Docker settings from the Docker Desktop application.
+## Team Best Practices
 
-3. Node.js and npm
-Node.js is a JavaScript runtime, and npm is a package manager for Node.js packages.
+### 🛡️ Privacy & Security
+- **Never** paste production secrets, PII (Personally Identifiable Information), or sensitive client keys into AI chat prompts.
+- Ensure "Code Snippets Collection" is disabled in settings for enterprise/private repositories.
 
-Installation: Install Node.js and npm by following the instructions for your operating system from the official Node.js website.
-Verification: Verify that Node.js and npm are installed correctly by running the following commands in your terminal:
+### 🔍 The "Pilot" Rule
+- The AI is the **Copilot**, you are the **Pilot**.
+- Never commit AI-generated code without a line-by-line review.
+- Validate that generated logic handles edge cases (null checks, error boundaries).
 
-node -v
-npm -v
+### 🧪 Automated Validation
+- Every piece of AI-generated logic should be accompanied by a unit test.
+- Use `/tests` in Copilot Chat or "Generate Tests" in Gemini to verify the logic immediately.
 
+## Prompt Engineering for Engineers
 
-4. Visual Studio Code
-Visual Studio Code is a lightweight and powerful source code editor.
+| Technique | Example |
+|---|---|
+| **Role Prompting** | "Act as a Senior DevOps Engineer with expertise in Terraform 1.9..." |
+| **Few-Shot** | Provide 1-2 examples of existing code style before asking for a new function. |
+| **Chain of Thought** | "Explain the logic step-by-step before writing the actual code." |
 
-Installation: Install Visual Studio Code by following the instructions for your operating system from the official Visual Studio Code website.
-Extensions: Install useful extensions for development workflows directly from Visual Studio Code Marketplace.
-Usage
+## Workflow Integration
 
-Follow the instructions provided in this README to install and configure the necessary tools for your local development environment.
+1. **Refactoring**: Highlight old code -> `Cmd + I` -> `/refactor for readability and performance`.
+2. **Documentation**: Highlight function -> `Cmd + I` -> `/doc` (generates JSDoc/Docstring).
+3. **Debugging**: Paste stack trace into chat -> "Analyze this error based on my current workspace."
 
-Contributions
-Contributions to improve this documentation are welcome. If you have suggestions or updates, please submit a pull request.
-
-License
-This project is licensed under the MIT License.
-
-
-Feel free to customize this README further to include additional tools, instructions, or information specific to your development environment and workflow.
-
-
-
-# Define code owners for specific paths
-* @AbhilashKolusu
-
+## Resources
+- Google AI for Developers
+- GitHub Copilot Documentation
+- Anthropic Claude Code Guide

@@ -2,12 +2,14 @@
 
 A consolidated repository containing development tools, setup guides, Dockerfiles, and learning resources.
 
-## Structure
+## Repository Taxonomy
 
 | Directory | Description |
 |---|---|
-| `AKGenAI_Tools/` | GenAI tools and configurations |
-| `Demo_Project/` | Demo project files |
-| `Dokcerfiles_aK/` | Dockerfiles and container configs |
-| `Mac_Os_Setup/` | macOS setup and configuration guides |
-| `Setup_tools_learning/` | DevOps tools learning resources (Linux, Git, Docker, K8s, CI/CD, IaC, etc.) |
+| **`setup/`** | OS-level configuration (macOS, Linux essentials) |
+| **`tools/developer/`** | IDE (VS Code), Version Control (Git), and Terminal utilities |
+| **`tools/devops/`** | Infrastructure as Code, CI/CD (ArgoCD, Ansible), and Observability |
+| **`tools/ai/`** | GenAI tools, LLM configurations, and AI-assisted workflows |
+| **`containers/`** | Dockerfiles, Compose files, and Registry configurations |
+| **`security/`** | Security, Compliance, and Secret Management standards |
+| **`projects/`** | Demo projects and sandbox environments |
