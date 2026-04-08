@@ -19,6 +19,16 @@ Terraform is an open-source Infrastructure as Code (IaC) tool created by HashiCo
 | **Ecosystem** | Thousands of community and official providers and modules |
 | **Drift detection** | Detect and reconcile manual changes to infrastructure |
 
+## 2026 Suitability Analysis
+
+### When to use
+- **Multi-Cloud complexity**: Use when managing resources across different providers (AWS + Cloudflare).
+- **Stateful Infrastructure**: Best for long-lived resources like VPCs, Databases, and IAM.
+
+### Alternatives
+- **OpenTofu**: Choose if your organization requires a strictly MPL-licensed open-source engine.
+- **Crossplane**: Consider if you prefer managing infrastructure directly via Kubernetes CRDs (GitOps native).
+
 ## Installation
 
 ### macOS
