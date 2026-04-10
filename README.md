@@ -13,6 +13,7 @@ Updated: April 2026.
 | **`tools/ai/`** | AI coding assistants, local LLMs, agent frameworks, MCP servers |
 | **`frameworks/`** | Frontend, backend, mobile, AI/ML, CSS/UI, full-stack, testing, databases |
 | **`containers/`** | Dockerfiles, Compose files, and Registry configurations |
+| **`networking/`** | Networking tools, tunneling, proxies, and cybersecurity |
 | **`security/`** | Security, Compliance, and Secret Management standards |
 | **`projects/`** | Demo projects and sandbox environments |
 
